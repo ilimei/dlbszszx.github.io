@@ -1,0 +1,16 @@
+---
+layout: default
+currentpageid: news
+---
+
+<div class="header-banner">
+	<h2>行业新闻</h2>
+</div>
+
+{% for news in site.categories.news %}
+<ul class="news">
+	<li><span class="f-r">{{ news.date | date: "%Y-%m-%-d" }}</span>
+		<a href="{{ news.url }}" class="ntitle">{{ news.title }}</a></li>
+</ul>
+{% endfor %}
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+	
+    <div class="container">
+      <div class="main-header">
+      		<div class="inner-side">
+		       {% include header.html %}
+		       <div class="header-banner">
+		       		<h2>行业新闻{{ page.currentpageid }}</h2>
+		       </div>
+		       <div class="about-section textnews">
+		       		<div class="newsTitle"><h2>{{ page.title }}</h2>
+		       		<p>{{ page.date | date: "%Y-%m-%-d" }}</p></div>
+		       		{{ content }}
+		       </div>
+		       {% include footer.html %}
+       		</div>
+      </div>
+    </div>
+   
+
+  </body>
+
+</html>

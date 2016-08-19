@@ -1,0 +1,37 @@
+<div class="header">
+	<div class="head-top">
+		<div class="top-menu">
+		<span class="menu"><img src="/assets/images/nav.png" alt=""/> </span>
+			<ul>
+				{% for menu in site.data.menu %}
+					{% if page.currentpageid == menu.id %}
+					<li class="active">
+					{% else %}
+					<li>
+					{% endif %}
+						<a href="{{ menu.url }}">
+							<span>{{ menu.name }}</span>
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="social-icons">
+			联系电话:{{ site.phone }}
+		</div>	
+		<!-- script for menu -->
+
+		<script>
+			$("span.menu").click(function(){
+				$(".top-menu ul").slideToggle("slow" , function(){
+				});
+			});
+		</script>
+		<!-- //script for menu -->
+
+		<div class="clearfix"></div>
+	</div>
+	<div class="logo">
+		<h1><a href="index.html">{{ site.title }}</a></h1>
+	</div>
+</div>

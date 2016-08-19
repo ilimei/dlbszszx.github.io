@@ -1,0 +1,19 @@
+- name: 首页
+  id: index
+  url: /index.html
+
+- name: 关于我们
+  id: about
+  url: /about.html
+
+- name: 产品展示
+  id: products
+  url: /product.html
+
+- name: 行业新闻
+  id: news
+  url: /news.html
+
+- name: 联系我们
+  id: contact
+  url: /contact.html
