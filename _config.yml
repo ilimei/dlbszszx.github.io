@@ -25,7 +25,7 @@ description: > # this means to ignore newlines until "baseurl:"
   大连保胜装饰装修工程有限公司是大连建筑装修施工行业知名企业，
   如果您对我公司的服务有兴趣，请来电咨询。
 baseurl: "" # the subpath of your site, e.g. /blog
-
+url: "http://dlbszszx.com"
 # Build settings
 markdown: kramdown
 
